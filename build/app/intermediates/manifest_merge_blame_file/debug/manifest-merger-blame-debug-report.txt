@@ -1,0 +1,473 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.mob.assignment"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+9        android:targetSdkVersion="34" />
+10    <!--
+11         The INTERNET permission is required for development. Specifically,
+12         the Flutter tool needs it to communicate with the running application
+13         to allow setting breakpoints, to provide hot reload, etc.
+14    -->
+15    <uses-permission android:name="android.permission.INTERNET" />
+15-->/Users/sunanda/AndroidStudioProjects/Assignment/assignment/android/app/src/main/AndroidManifest.xml:2:5-67
+15-->/Users/sunanda/AndroidStudioProjects/Assignment/assignment/android/app/src/main/AndroidManifest.xml:2:22-64
+16    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+16-->/Users/sunanda/AndroidStudioProjects/Assignment/assignment/android/app/src/main/AndroidManifest.xml:3:5-79
+16-->/Users/sunanda/AndroidStudioProjects/Assignment/assignment/android/app/src/main/AndroidManifest.xml:3:22-76
+17    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+17-->/Users/sunanda/AndroidStudioProjects/Assignment/assignment/android/app/src/main/AndroidManifest.xml:4:5-81
+17-->/Users/sunanda/AndroidStudioProjects/Assignment/assignment/android/app/src/main/AndroidManifest.xml:4:22-78
+18    <!--
+19 Required to query activities that can process text, see:
+20         https://developer.android.com/training/package-visibility and
+21         https://developer.android.com/reference/android/content/Intent#ACTION_PROCESS_TEXT.
+22
+23         In particular, this is used by the Flutter engine in io.flutter.plugin.text.ProcessTextPlugin.
+24    -->
+25    <queries>
+25-->/Users/sunanda/AndroidStudioProjects/Assignment/assignment/android/app/src/main/AndroidManifest.xml:42:5-47:15
+26        <intent>
+26-->/Users/sunanda/AndroidStudioProjects/Assignment/assignment/android/app/src/main/AndroidManifest.xml:43:9-46:18
+27            <action android:name="android.intent.action.PROCESS_TEXT" />
+27-->/Users/sunanda/AndroidStudioProjects/Assignment/assignment/android/app/src/main/AndroidManifest.xml:44:13-72
+27-->/Users/sunanda/AndroidStudioProjects/Assignment/assignment/android/app/src/main/AndroidManifest.xml:44:21-70
+28
+29            <data android:mimeType="text/plain" />
+29-->/Users/sunanda/AndroidStudioProjects/Assignment/assignment/android/app/src/main/AndroidManifest.xml:45:13-50
+29-->/Users/sunanda/AndroidStudioProjects/Assignment/assignment/android/app/src/main/AndroidManifest.xml:45:19-48
+30        </intent>
+31        <!-- Needs to be explicitly declared on Android R+ -->
+32        <package android:name="com.google.android.apps.maps" />
+32-->[com.google.android.gms:play-services-maps:18.2.0] /Users/sunanda/.gradle/caches/transforms-3/9322c5c801ca3d52982602c5a2bc0373/transformed/jetified-play-services-maps-18.2.0/AndroidManifest.xml:33:9-64
+32-->[com.google.android.gms:play-services-maps:18.2.0] /Users/sunanda/.gradle/caches/transforms-3/9322c5c801ca3d52982602c5a2bc0373/transformed/jetified-play-services-maps-18.2.0/AndroidManifest.xml:33:18-61
+33    </queries>
+34
+35    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+35-->[:connectivity_plus] /Users/sunanda/AndroidStudioProjects/Assignment/assignment/build/connectivity_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:9:5-79
+35-->[:connectivity_plus] /Users/sunanda/AndroidStudioProjects/Assignment/assignment/build/connectivity_plus/intermediates/merged_manifest/debug/AndroidManifest.xml:9:22-76
+36
+37    <uses-feature
+37-->[com.google.android.gms:play-services-maps:18.2.0] /Users/sunanda/.gradle/caches/transforms-3/9322c5c801ca3d52982602c5a2bc0373/transformed/jetified-play-services-maps-18.2.0/AndroidManifest.xml:26:5-28:35
+38        android:glEsVersion="0x00020000"
+38-->[com.google.android.gms:play-services-maps:18.2.0] /Users/sunanda/.gradle/caches/transforms-3/9322c5c801ca3d52982602c5a2bc0373/transformed/jetified-play-services-maps-18.2.0/AndroidManifest.xml:27:9-41
+39        android:required="true" />
+39-->[com.google.android.gms:play-services-maps:18.2.0] /Users/sunanda/.gradle/caches/transforms-3/9322c5c801ca3d52982602c5a2bc0373/transformed/jetified-play-services-maps-18.2.0/AndroidManifest.xml:28:9-32
+40
+41    <uses-permission android:name="android.permission.WAKE_LOCK" />
+41-->[androidx.work:work-runtime:2.8.1] /Users/sunanda/.gradle/caches/transforms-3/6f993127dffdb40dfb3bf4e8a0126109/transformed/work-runtime-2.8.1/AndroidManifest.xml:23:5-68
+41-->[androidx.work:work-runtime:2.8.1] /Users/sunanda/.gradle/caches/transforms-3/6f993127dffdb40dfb3bf4e8a0126109/transformed/work-runtime-2.8.1/AndroidManifest.xml:23:22-65
+42    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+42-->[androidx.work:work-runtime:2.8.1] /Users/sunanda/.gradle/caches/transforms-3/6f993127dffdb40dfb3bf4e8a0126109/transformed/work-runtime-2.8.1/AndroidManifest.xml:25:5-81
+42-->[androidx.work:work-runtime:2.8.1] /Users/sunanda/.gradle/caches/transforms-3/6f993127dffdb40dfb3bf4e8a0126109/transformed/work-runtime-2.8.1/AndroidManifest.xml:25:22-78
+43    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+43-->[androidx.work:work-runtime:2.8.1] /Users/sunanda/.gradle/caches/transforms-3/6f993127dffdb40dfb3bf4e8a0126109/transformed/work-runtime-2.8.1/AndroidManifest.xml:26:5-77
+43-->[androidx.work:work-runtime:2.8.1] /Users/sunanda/.gradle/caches/transforms-3/6f993127dffdb40dfb3bf4e8a0126109/transformed/work-runtime-2.8.1/AndroidManifest.xml:26:22-74
+44
+45    <permission
+45-->[androidx.core:core:1.13.1] /Users/sunanda/.gradle/caches/transforms-3/f41476b6df1d004d92c59b9e1ffb379a/transformed/core-1.13.1/AndroidManifest.xml:22:5-24:47
+46        android:name="com.mob.assignment.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+46-->[androidx.core:core:1.13.1] /Users/sunanda/.gradle/caches/transforms-3/f41476b6df1d004d92c59b9e1ffb379a/transformed/core-1.13.1/AndroidManifest.xml:23:9-81
+47        android:protectionLevel="signature" />
+47-->[androidx.core:core:1.13.1] /Users/sunanda/.gradle/caches/transforms-3/f41476b6df1d004d92c59b9e1ffb379a/transformed/core-1.13.1/AndroidManifest.xml:24:9-44
+48
+49    <uses-permission android:name="com.mob.assignment.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+49-->[androidx.core:core:1.13.1] /Users/sunanda/.gradle/caches/transforms-3/f41476b6df1d004d92c59b9e1ffb379a/transformed/core-1.13.1/AndroidManifest.xml:26:5-97
+49-->[androidx.core:core:1.13.1] /Users/sunanda/.gradle/caches/transforms-3/f41476b6df1d004d92c59b9e1ffb379a/transformed/core-1.13.1/AndroidManifest.xml:26:22-94
+50
+51    <application
+52        android:name="android.app.Application"
+53        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+53-->[androidx.core:core:1.13.1] /Users/sunanda/.gradle/caches/transforms-3/f41476b6df1d004d92c59b9e1ffb379a/transformed/core-1.13.1/AndroidManifest.xml:28:18-86
+54        android:debuggable="true"
+55        android:icon="@mipmap/ic_launcher"
+56        android:label="Assignment" >
+57        <activity
+58            android:name="com.mob.assignment.MainActivity"
+59            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+60            android:exported="true"
+61            android:hardwareAccelerated="true"
+62            android:launchMode="singleTop"
+63            android:taskAffinity=""
+64            android:theme="@style/LaunchTheme"
+65            android:windowSoftInputMode="adjustResize" >
+66
+67            <!--
+68                 Specifies an Android theme to apply to this Activity as soon as
+69                 the Android process has started. This theme is visible to the user
+70                 while the Flutter UI initializes. After that, this theme continues
+71                 to determine the Window background behind the Flutter UI.
+72            -->
+73            <meta-data
+74                android:name="io.flutter.embedding.android.NormalTheme"
+75                android:resource="@style/NormalTheme" />
+76
+77            <intent-filter>
+78                <action android:name="android.intent.action.MAIN" />
+79
+80                <category android:name="android.intent.category.LAUNCHER" />
+81            </intent-filter>
+82        </activity>
+83        <!--
+84             Don't delete the meta-data below.
+85             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+86        -->
+87        <meta-data
+88            android:name="flutterEmbedding"
+89            android:value="2" />
+90
+91        <provider
+91-->[:image_picker_android] /Users/sunanda/AndroidStudioProjects/Assignment/assignment/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:11:9-19:20
+92            android:name="io.flutter.plugins.imagepicker.ImagePickerFileProvider"
+92-->[:image_picker_android] /Users/sunanda/AndroidStudioProjects/Assignment/assignment/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:12:13-82
+93            android:authorities="com.mob.assignment.flutter.image_provider"
+93-->[:image_picker_android] /Users/sunanda/AndroidStudioProjects/Assignment/assignment/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:13:13-74
+94            android:exported="false"
+94-->[:image_picker_android] /Users/sunanda/AndroidStudioProjects/Assignment/assignment/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:14:13-37
+95            android:grantUriPermissions="true" >
+95-->[:image_picker_android] /Users/sunanda/AndroidStudioProjects/Assignment/assignment/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:15:13-47
+96            <meta-data
+96-->[:image_picker_android] /Users/sunanda/AndroidStudioProjects/Assignment/assignment/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:16:13-18:75
+97                android:name="android.support.FILE_PROVIDER_PATHS"
+97-->[:image_picker_android] /Users/sunanda/AndroidStudioProjects/Assignment/assignment/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:17:17-67
+98                android:resource="@xml/flutter_image_picker_file_paths" />
+98-->[:image_picker_android] /Users/sunanda/AndroidStudioProjects/Assignment/assignment/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:18:17-72
+99        </provider> <!-- Trigger Google Play services to install the backported photo picker module. -->
+100        <service
+100-->[:image_picker_android] /Users/sunanda/AndroidStudioProjects/Assignment/assignment/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:21:9-33:19
+101            android:name="com.google.android.gms.metadata.ModuleDependencies"
+101-->[:image_picker_android] /Users/sunanda/AndroidStudioProjects/Assignment/assignment/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:22:13-78
+102            android:enabled="false"
+102-->[:image_picker_android] /Users/sunanda/AndroidStudioProjects/Assignment/assignment/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:23:13-36
+103            android:exported="false" >
+103-->[:image_picker_android] /Users/sunanda/AndroidStudioProjects/Assignment/assignment/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:24:13-37
+104            <intent-filter>
+104-->[:image_picker_android] /Users/sunanda/AndroidStudioProjects/Assignment/assignment/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:26:13-28:29
+105                <action android:name="com.google.android.gms.metadata.MODULE_DEPENDENCIES" />
+105-->[:image_picker_android] /Users/sunanda/AndroidStudioProjects/Assignment/assignment/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:27:17-94
+105-->[:image_picker_android] /Users/sunanda/AndroidStudioProjects/Assignment/assignment/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:27:25-91
+106            </intent-filter>
+107
+108            <meta-data
+108-->[:image_picker_android] /Users/sunanda/AndroidStudioProjects/Assignment/assignment/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:30:13-32:36
+109                android:name="photopicker_activity:0:required"
+109-->[:image_picker_android] /Users/sunanda/AndroidStudioProjects/Assignment/assignment/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:31:17-63
+110                android:value="" />
+110-->[:image_picker_android] /Users/sunanda/AndroidStudioProjects/Assignment/assignment/build/image_picker_android/intermediates/merged_manifest/debug/AndroidManifest.xml:32:17-33
+111        </service>
+112        <service
+112-->[:geolocator_android] /Users/sunanda/AndroidStudioProjects/Assignment/assignment/build/geolocator_android/intermediates/merged_manifest/debug/AndroidManifest.xml:10:9-14:56
+113            android:name="com.baseflow.geolocator.GeolocatorLocationService"
+113-->[:geolocator_android] /Users/sunanda/AndroidStudioProjects/Assignment/assignment/build/geolocator_android/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-77
+114            android:enabled="true"
+114-->[:geolocator_android] /Users/sunanda/AndroidStudioProjects/Assignment/assignment/build/geolocator_android/intermediates/merged_manifest/debug/AndroidManifest.xml:12:13-35
+115            android:exported="false"
+115-->[:geolocator_android] /Users/sunanda/AndroidStudioProjects/Assignment/assignment/build/geolocator_android/intermediates/merged_manifest/debug/AndroidManifest.xml:13:13-37
+116            android:foregroundServiceType="location" />
+116-->[:geolocator_android] /Users/sunanda/AndroidStudioProjects/Assignment/assignment/build/geolocator_android/intermediates/merged_manifest/debug/AndroidManifest.xml:14:13-53
+117        <service
+117-->[:location] /Users/sunanda/AndroidStudioProjects/Assignment/assignment/build/location/intermediates/merged_manifest/debug/AndroidManifest.xml:13:9-17:56
+118            android:name="com.lyokone.location.FlutterLocationService"
+118-->[:location] /Users/sunanda/AndroidStudioProjects/Assignment/assignment/build/location/intermediates/merged_manifest/debug/AndroidManifest.xml:14:13-71
+119            android:enabled="true"
+119-->[:location] /Users/sunanda/AndroidStudioProjects/Assignment/assignment/build/location/intermediates/merged_manifest/debug/AndroidManifest.xml:15:13-35
+120            android:exported="false"
+120-->[:location] /Users/sunanda/AndroidStudioProjects/Assignment/assignment/build/location/intermediates/merged_manifest/debug/AndroidManifest.xml:16:13-37
+121            android:foregroundServiceType="location" /> <!-- Needs to be explicitly declared on P+ -->
+121-->[:location] /Users/sunanda/AndroidStudioProjects/Assignment/assignment/build/location/intermediates/merged_manifest/debug/AndroidManifest.xml:17:13-53
+122        <uses-library
+122-->[com.google.android.gms:play-services-maps:18.2.0] /Users/sunanda/.gradle/caches/transforms-3/9322c5c801ca3d52982602c5a2bc0373/transformed/jetified-play-services-maps-18.2.0/AndroidManifest.xml:39:9-41:40
+123            android:name="org.apache.http.legacy"
+123-->[com.google.android.gms:play-services-maps:18.2.0] /Users/sunanda/.gradle/caches/transforms-3/9322c5c801ca3d52982602c5a2bc0373/transformed/jetified-play-services-maps-18.2.0/AndroidManifest.xml:40:13-50
+124            android:required="false" />
+124-->[com.google.android.gms:play-services-maps:18.2.0] /Users/sunanda/.gradle/caches/transforms-3/9322c5c801ca3d52982602c5a2bc0373/transformed/jetified-play-services-maps-18.2.0/AndroidManifest.xml:41:13-37
+125
+126        <activity
+126-->[com.google.android.gms:play-services-base:18.3.0] /Users/sunanda/.gradle/caches/transforms-3/e6db6139495a9c77ca34c05a2d6bb7e8/transformed/jetified-play-services-base-18.3.0/AndroidManifest.xml:20:9-22:45
+127            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+127-->[com.google.android.gms:play-services-base:18.3.0] /Users/sunanda/.gradle/caches/transforms-3/e6db6139495a9c77ca34c05a2d6bb7e8/transformed/jetified-play-services-base-18.3.0/AndroidManifest.xml:20:19-85
+128            android:exported="false"
+128-->[com.google.android.gms:play-services-base:18.3.0] /Users/sunanda/.gradle/caches/transforms-3/e6db6139495a9c77ca34c05a2d6bb7e8/transformed/jetified-play-services-base-18.3.0/AndroidManifest.xml:22:19-43
+129            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+129-->[com.google.android.gms:play-services-base:18.3.0] /Users/sunanda/.gradle/caches/transforms-3/e6db6139495a9c77ca34c05a2d6bb7e8/transformed/jetified-play-services-base-18.3.0/AndroidManifest.xml:21:19-78
+130
+131        <meta-data
+131-->[com.google.android.gms:play-services-basement:18.3.0] /Users/sunanda/.gradle/caches/transforms-3/eaab88a4b8116195037bc89f38300c22/transformed/jetified-play-services-basement-18.3.0/AndroidManifest.xml:21:9-23:69
+132            android:name="com.google.android.gms.version"
+132-->[com.google.android.gms:play-services-basement:18.3.0] /Users/sunanda/.gradle/caches/transforms-3/eaab88a4b8116195037bc89f38300c22/transformed/jetified-play-services-basement-18.3.0/AndroidManifest.xml:22:13-58
+133            android:value="@integer/google_play_services_version" />
+133-->[com.google.android.gms:play-services-basement:18.3.0] /Users/sunanda/.gradle/caches/transforms-3/eaab88a4b8116195037bc89f38300c22/transformed/jetified-play-services-basement-18.3.0/AndroidManifest.xml:23:13-66
+134
+135        <provider
+135-->[androidx.work:work-runtime:2.8.1] /Users/sunanda/.gradle/caches/transforms-3/6f993127dffdb40dfb3bf4e8a0126109/transformed/work-runtime-2.8.1/AndroidManifest.xml:29:9-37:20
+136            android:name="androidx.startup.InitializationProvider"
+136-->[androidx.work:work-runtime:2.8.1] /Users/sunanda/.gradle/caches/transforms-3/6f993127dffdb40dfb3bf4e8a0126109/transformed/work-runtime-2.8.1/AndroidManifest.xml:30:13-67
+137            android:authorities="com.mob.assignment.androidx-startup"
+137-->[androidx.work:work-runtime:2.8.1] /Users/sunanda/.gradle/caches/transforms-3/6f993127dffdb40dfb3bf4e8a0126109/transformed/work-runtime-2.8.1/AndroidManifest.xml:31:13-68
+138            android:exported="false" >
+138-->[androidx.work:work-runtime:2.8.1] /Users/sunanda/.gradle/caches/transforms-3/6f993127dffdb40dfb3bf4e8a0126109/transformed/work-runtime-2.8.1/AndroidManifest.xml:32:13-37
+139            <meta-data
+139-->[androidx.work:work-runtime:2.8.1] /Users/sunanda/.gradle/caches/transforms-3/6f993127dffdb40dfb3bf4e8a0126109/transformed/work-runtime-2.8.1/AndroidManifest.xml:34:13-36:52
+140                android:name="androidx.work.WorkManagerInitializer"
+140-->[androidx.work:work-runtime:2.8.1] /Users/sunanda/.gradle/caches/transforms-3/6f993127dffdb40dfb3bf4e8a0126109/transformed/work-runtime-2.8.1/AndroidManifest.xml:35:17-68
+141                android:value="androidx.startup" />
+141-->[androidx.work:work-runtime:2.8.1] /Users/sunanda/.gradle/caches/transforms-3/6f993127dffdb40dfb3bf4e8a0126109/transformed/work-runtime-2.8.1/AndroidManifest.xml:36:17-49
+142            <meta-data
+142-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/sunanda/.gradle/caches/transforms-3/091a16723a6e318b9f9d526240b917f7/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:29:13-31:52
+143                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+143-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/sunanda/.gradle/caches/transforms-3/091a16723a6e318b9f9d526240b917f7/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:30:17-78
+144                android:value="androidx.startup" />
+144-->[androidx.lifecycle:lifecycle-process:2.7.0] /Users/sunanda/.gradle/caches/transforms-3/091a16723a6e318b9f9d526240b917f7/transformed/jetified-lifecycle-process-2.7.0/AndroidManifest.xml:31:17-49
+145            <meta-data
+145-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/sunanda/.gradle/caches/transforms-3/34758bf094995e6c40090ba06b061f11/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:29:13-31:52
+146                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+146-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/sunanda/.gradle/caches/transforms-3/34758bf094995e6c40090ba06b061f11/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:30:17-85
+147                android:value="androidx.startup" />
+147-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/sunanda/.gradle/caches/transforms-3/34758bf094995e6c40090ba06b061f11/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:31:17-49
+148        </provider>
+149
+150        <service
+150-->[androidx.work:work-runtime:2.8.1] /Users/sunanda/.gradle/caches/transforms-3/6f993127dffdb40dfb3bf4e8a0126109/transformed/work-runtime-2.8.1/AndroidManifest.xml:39:9-45:35
+151            android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"
+151-->[androidx.work:work-runtime:2.8.1] /Users/sunanda/.gradle/caches/transforms-3/6f993127dffdb40dfb3bf4e8a0126109/transformed/work-runtime-2.8.1/AndroidManifest.xml:40:13-88
+152            android:directBootAware="false"
+152-->[androidx.work:work-runtime:2.8.1] /Users/sunanda/.gradle/caches/transforms-3/6f993127dffdb40dfb3bf4e8a0126109/transformed/work-runtime-2.8.1/AndroidManifest.xml:41:13-44
+153            android:enabled="@bool/enable_system_alarm_service_default"
+153-->[androidx.work:work-runtime:2.8.1] /Users/sunanda/.gradle/caches/transforms-3/6f993127dffdb40dfb3bf4e8a0126109/transformed/work-runtime-2.8.1/AndroidManifest.xml:42:13-72
+154            android:exported="false" />
+154-->[androidx.work:work-runtime:2.8.1] /Users/sunanda/.gradle/caches/transforms-3/6f993127dffdb40dfb3bf4e8a0126109/transformed/work-runtime-2.8.1/AndroidManifest.xml:43:13-37
+155        <service
+155-->[androidx.work:work-runtime:2.8.1] /Users/sunanda/.gradle/caches/transforms-3/6f993127dffdb40dfb3bf4e8a0126109/transformed/work-runtime-2.8.1/AndroidManifest.xml:46:9-52:35
+156            android:name="androidx.work.impl.background.systemjob.SystemJobService"
+156-->[androidx.work:work-runtime:2.8.1] /Users/sunanda/.gradle/caches/transforms-3/6f993127dffdb40dfb3bf4e8a0126109/transformed/work-runtime-2.8.1/AndroidManifest.xml:47:13-84
+157            android:directBootAware="false"
+157-->[androidx.work:work-runtime:2.8.1] /Users/sunanda/.gradle/caches/transforms-3/6f993127dffdb40dfb3bf4e8a0126109/transformed/work-runtime-2.8.1/AndroidManifest.xml:48:13-44
+158            android:enabled="@bool/enable_system_job_service_default"
+158-->[androidx.work:work-runtime:2.8.1] /Users/sunanda/.gradle/caches/transforms-3/6f993127dffdb40dfb3bf4e8a0126109/transformed/work-runtime-2.8.1/AndroidManifest.xml:49:13-70
+159            android:exported="true"
+159-->[androidx.work:work-runtime:2.8.1] /Users/sunanda/.gradle/caches/transforms-3/6f993127dffdb40dfb3bf4e8a0126109/transformed/work-runtime-2.8.1/AndroidManifest.xml:50:13-36
+160            android:permission="android.permission.BIND_JOB_SERVICE" />
+160-->[androidx.work:work-runtime:2.8.1] /Users/sunanda/.gradle/caches/transforms-3/6f993127dffdb40dfb3bf4e8a0126109/transformed/work-runtime-2.8.1/AndroidManifest.xml:51:13-69
+161        <service
+161-->[androidx.work:work-runtime:2.8.1] /Users/sunanda/.gradle/caches/transforms-3/6f993127dffdb40dfb3bf4e8a0126109/transformed/work-runtime-2.8.1/AndroidManifest.xml:53:9-59:35
+162            android:name="androidx.work.impl.foreground.SystemForegroundService"
+162-->[androidx.work:work-runtime:2.8.1] /Users/sunanda/.gradle/caches/transforms-3/6f993127dffdb40dfb3bf4e8a0126109/transformed/work-runtime-2.8.1/AndroidManifest.xml:54:13-81
+163            android:directBootAware="false"
+163-->[androidx.work:work-runtime:2.8.1] /Users/sunanda/.gradle/caches/transforms-3/6f993127dffdb40dfb3bf4e8a0126109/transformed/work-runtime-2.8.1/AndroidManifest.xml:55:13-44
+164            android:enabled="@bool/enable_system_foreground_service_default"
+164-->[androidx.work:work-runtime:2.8.1] /Users/sunanda/.gradle/caches/transforms-3/6f993127dffdb40dfb3bf4e8a0126109/transformed/work-runtime-2.8.1/AndroidManifest.xml:56:13-77
+165            android:exported="false" />
+165-->[androidx.work:work-runtime:2.8.1] /Users/sunanda/.gradle/caches/transforms-3/6f993127dffdb40dfb3bf4e8a0126109/transformed/work-runtime-2.8.1/AndroidManifest.xml:57:13-37
+166
+167        <receiver
+167-->[androidx.work:work-runtime:2.8.1] /Users/sunanda/.gradle/caches/transforms-3/6f993127dffdb40dfb3bf4e8a0126109/transformed/work-runtime-2.8.1/AndroidManifest.xml:61:9-66:35
+168            android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"
+168-->[androidx.work:work-runtime:2.8.1] /Users/sunanda/.gradle/caches/transforms-3/6f993127dffdb40dfb3bf4e8a0126109/transformed/work-runtime-2.8.1/AndroidManifest.xml:62:13-88
+169            android:directBootAware="false"
+169-->[androidx.work:work-runtime:2.8.1] /Users/sunanda/.gradle/caches/transforms-3/6f993127dffdb40dfb3bf4e8a0126109/transformed/work-runtime-2.8.1/AndroidManifest.xml:63:13-44
+170            android:enabled="true"
+170-->[androidx.work:work-runtime:2.8.1] /Users/sunanda/.gradle/caches/transforms-3/6f993127dffdb40dfb3bf4e8a0126109/transformed/work-runtime-2.8.1/AndroidManifest.xml:64:13-35
+171            android:exported="false" />
+171-->[androidx.work:work-runtime:2.8.1] /Users/sunanda/.gradle/caches/transforms-3/6f993127dffdb40dfb3bf4e8a0126109/transformed/work-runtime-2.8.1/AndroidManifest.xml:65:13-37
+172        <receiver
+172-->[androidx.work:work-runtime:2.8.1] /Users/sunanda/.gradle/caches/transforms-3/6f993127dffdb40dfb3bf4e8a0126109/transformed/work-runtime-2.8.1/AndroidManifest.xml:67:9-77:20
+173            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy"
+173-->[androidx.work:work-runtime:2.8.1] /Users/sunanda/.gradle/caches/transforms-3/6f993127dffdb40dfb3bf4e8a0126109/transformed/work-runtime-2.8.1/AndroidManifest.xml:68:13-106
+174            android:directBootAware="false"
+174-->[androidx.work:work-runtime:2.8.1] /Users/sunanda/.gradle/caches/transforms-3/6f993127dffdb40dfb3bf4e8a0126109/transformed/work-runtime-2.8.1/AndroidManifest.xml:69:13-44
+175            android:enabled="false"
+175-->[androidx.work:work-runtime:2.8.1] /Users/sunanda/.gradle/caches/transforms-3/6f993127dffdb40dfb3bf4e8a0126109/transformed/work-runtime-2.8.1/AndroidManifest.xml:70:13-36
+176            android:exported="false" >
+176-->[androidx.work:work-runtime:2.8.1] /Users/sunanda/.gradle/caches/transforms-3/6f993127dffdb40dfb3bf4e8a0126109/transformed/work-runtime-2.8.1/AndroidManifest.xml:71:13-37
+177            <intent-filter>
+177-->[androidx.work:work-runtime:2.8.1] /Users/sunanda/.gradle/caches/transforms-3/6f993127dffdb40dfb3bf4e8a0126109/transformed/work-runtime-2.8.1/AndroidManifest.xml:73:13-76:29
+178                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+178-->[androidx.work:work-runtime:2.8.1] /Users/sunanda/.gradle/caches/transforms-3/6f993127dffdb40dfb3bf4e8a0126109/transformed/work-runtime-2.8.1/AndroidManifest.xml:74:17-87
+178-->[androidx.work:work-runtime:2.8.1] /Users/sunanda/.gradle/caches/transforms-3/6f993127dffdb40dfb3bf4e8a0126109/transformed/work-runtime-2.8.1/AndroidManifest.xml:74:25-84
+179                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+179-->[androidx.work:work-runtime:2.8.1] /Users/sunanda/.gradle/caches/transforms-3/6f993127dffdb40dfb3bf4e8a0126109/transformed/work-runtime-2.8.1/AndroidManifest.xml:75:17-90
+179-->[androidx.work:work-runtime:2.8.1] /Users/sunanda/.gradle/caches/transforms-3/6f993127dffdb40dfb3bf4e8a0126109/transformed/work-runtime-2.8.1/AndroidManifest.xml:75:25-87
+180            </intent-filter>
+181        </receiver>
+182        <receiver
+182-->[androidx.work:work-runtime:2.8.1] /Users/sunanda/.gradle/caches/transforms-3/6f993127dffdb40dfb3bf4e8a0126109/transformed/work-runtime-2.8.1/AndroidManifest.xml:78:9-88:20
+183            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy"
+183-->[androidx.work:work-runtime:2.8.1] /Users/sunanda/.gradle/caches/transforms-3/6f993127dffdb40dfb3bf4e8a0126109/transformed/work-runtime-2.8.1/AndroidManifest.xml:79:13-104
+184            android:directBootAware="false"
+184-->[androidx.work:work-runtime:2.8.1] /Users/sunanda/.gradle/caches/transforms-3/6f993127dffdb40dfb3bf4e8a0126109/transformed/work-runtime-2.8.1/AndroidManifest.xml:80:13-44
+185            android:enabled="false"
+185-->[androidx.work:work-runtime:2.8.1] /Users/sunanda/.gradle/caches/transforms-3/6f993127dffdb40dfb3bf4e8a0126109/transformed/work-runtime-2.8.1/AndroidManifest.xml:81:13-36
+186            android:exported="false" >
+186-->[androidx.work:work-runtime:2.8.1] /Users/sunanda/.gradle/caches/transforms-3/6f993127dffdb40dfb3bf4e8a0126109/transformed/work-runtime-2.8.1/AndroidManifest.xml:82:13-37
+187            <intent-filter>
+187-->[androidx.work:work-runtime:2.8.1] /Users/sunanda/.gradle/caches/transforms-3/6f993127dffdb40dfb3bf4e8a0126109/transformed/work-runtime-2.8.1/AndroidManifest.xml:84:13-87:29
+188                <action android:name="android.intent.action.BATTERY_OKAY" />
+188-->[androidx.work:work-runtime:2.8.1] /Users/sunanda/.gradle/caches/transforms-3/6f993127dffdb40dfb3bf4e8a0126109/transformed/work-runtime-2.8.1/AndroidManifest.xml:85:17-77
+188-->[androidx.work:work-runtime:2.8.1] /Users/sunanda/.gradle/caches/transforms-3/6f993127dffdb40dfb3bf4e8a0126109/transformed/work-runtime-2.8.1/AndroidManifest.xml:85:25-74
+189                <action android:name="android.intent.action.BATTERY_LOW" />
+189-->[androidx.work:work-runtime:2.8.1] /Users/sunanda/.gradle/caches/transforms-3/6f993127dffdb40dfb3bf4e8a0126109/transformed/work-runtime-2.8.1/AndroidManifest.xml:86:17-76
+189-->[androidx.work:work-runtime:2.8.1] /Users/sunanda/.gradle/caches/transforms-3/6f993127dffdb40dfb3bf4e8a0126109/transformed/work-runtime-2.8.1/AndroidManifest.xml:86:25-73
+190            </intent-filter>
+191        </receiver>
+192        <receiver
+192-->[androidx.work:work-runtime:2.8.1] /Users/sunanda/.gradle/caches/transforms-3/6f993127dffdb40dfb3bf4e8a0126109/transformed/work-runtime-2.8.1/AndroidManifest.xml:89:9-99:20
+193            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy"
+193-->[androidx.work:work-runtime:2.8.1] /Users/sunanda/.gradle/caches/transforms-3/6f993127dffdb40dfb3bf4e8a0126109/transformed/work-runtime-2.8.1/AndroidManifest.xml:90:13-104
+194            android:directBootAware="false"
+194-->[androidx.work:work-runtime:2.8.1] /Users/sunanda/.gradle/caches/transforms-3/6f993127dffdb40dfb3bf4e8a0126109/transformed/work-runtime-2.8.1/AndroidManifest.xml:91:13-44
+195            android:enabled="false"
+195-->[androidx.work:work-runtime:2.8.1] /Users/sunanda/.gradle/caches/transforms-3/6f993127dffdb40dfb3bf4e8a0126109/transformed/work-runtime-2.8.1/AndroidManifest.xml:92:13-36
+196            android:exported="false" >
+196-->[androidx.work:work-runtime:2.8.1] /Users/sunanda/.gradle/caches/transforms-3/6f993127dffdb40dfb3bf4e8a0126109/transformed/work-runtime-2.8.1/AndroidManifest.xml:93:13-37
+197            <intent-filter>
+197-->[androidx.work:work-runtime:2.8.1] /Users/sunanda/.gradle/caches/transforms-3/6f993127dffdb40dfb3bf4e8a0126109/transformed/work-runtime-2.8.1/AndroidManifest.xml:95:13-98:29
+198                <action android:name="android.intent.action.DEVICE_STORAGE_LOW" />
+198-->[androidx.work:work-runtime:2.8.1] /Users/sunanda/.gradle/caches/transforms-3/6f993127dffdb40dfb3bf4e8a0126109/transformed/work-runtime-2.8.1/AndroidManifest.xml:96:17-83
+198-->[androidx.work:work-runtime:2.8.1] /Users/sunanda/.gradle/caches/transforms-3/6f993127dffdb40dfb3bf4e8a0126109/transformed/work-runtime-2.8.1/AndroidManifest.xml:96:25-80
+199                <action android:name="android.intent.action.DEVICE_STORAGE_OK" />
+199-->[androidx.work:work-runtime:2.8.1] /Users/sunanda/.gradle/caches/transforms-3/6f993127dffdb40dfb3bf4e8a0126109/transformed/work-runtime-2.8.1/AndroidManifest.xml:97:17-82
+199-->[androidx.work:work-runtime:2.8.1] /Users/sunanda/.gradle/caches/transforms-3/6f993127dffdb40dfb3bf4e8a0126109/transformed/work-runtime-2.8.1/AndroidManifest.xml:97:25-79
+200            </intent-filter>
+201        </receiver>
+202        <receiver
+202-->[androidx.work:work-runtime:2.8.1] /Users/sunanda/.gradle/caches/transforms-3/6f993127dffdb40dfb3bf4e8a0126109/transformed/work-runtime-2.8.1/AndroidManifest.xml:100:9-109:20
+203            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy"
+203-->[androidx.work:work-runtime:2.8.1] /Users/sunanda/.gradle/caches/transforms-3/6f993127dffdb40dfb3bf4e8a0126109/transformed/work-runtime-2.8.1/AndroidManifest.xml:101:13-103
+204            android:directBootAware="false"
+204-->[androidx.work:work-runtime:2.8.1] /Users/sunanda/.gradle/caches/transforms-3/6f993127dffdb40dfb3bf4e8a0126109/transformed/work-runtime-2.8.1/AndroidManifest.xml:102:13-44
+205            android:enabled="false"
+205-->[androidx.work:work-runtime:2.8.1] /Users/sunanda/.gradle/caches/transforms-3/6f993127dffdb40dfb3bf4e8a0126109/transformed/work-runtime-2.8.1/AndroidManifest.xml:103:13-36
+206            android:exported="false" >
+206-->[androidx.work:work-runtime:2.8.1] /Users/sunanda/.gradle/caches/transforms-3/6f993127dffdb40dfb3bf4e8a0126109/transformed/work-runtime-2.8.1/AndroidManifest.xml:104:13-37
+207            <intent-filter>
+207-->[androidx.work:work-runtime:2.8.1] /Users/sunanda/.gradle/caches/transforms-3/6f993127dffdb40dfb3bf4e8a0126109/transformed/work-runtime-2.8.1/AndroidManifest.xml:106:13-108:29
+208                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+208-->[androidx.work:work-runtime:2.8.1] /Users/sunanda/.gradle/caches/transforms-3/6f993127dffdb40dfb3bf4e8a0126109/transformed/work-runtime-2.8.1/AndroidManifest.xml:107:17-79
+208-->[androidx.work:work-runtime:2.8.1] /Users/sunanda/.gradle/caches/transforms-3/6f993127dffdb40dfb3bf4e8a0126109/transformed/work-runtime-2.8.1/AndroidManifest.xml:107:25-76
+209            </intent-filter>
+210        </receiver>
+211        <receiver
+211-->[androidx.work:work-runtime:2.8.1] /Users/sunanda/.gradle/caches/transforms-3/6f993127dffdb40dfb3bf4e8a0126109/transformed/work-runtime-2.8.1/AndroidManifest.xml:110:9-121:20
+212            android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver"
+212-->[androidx.work:work-runtime:2.8.1] /Users/sunanda/.gradle/caches/transforms-3/6f993127dffdb40dfb3bf4e8a0126109/transformed/work-runtime-2.8.1/AndroidManifest.xml:111:13-88
+213            android:directBootAware="false"
+213-->[androidx.work:work-runtime:2.8.1] /Users/sunanda/.gradle/caches/transforms-3/6f993127dffdb40dfb3bf4e8a0126109/transformed/work-runtime-2.8.1/AndroidManifest.xml:112:13-44
+214            android:enabled="false"
+214-->[androidx.work:work-runtime:2.8.1] /Users/sunanda/.gradle/caches/transforms-3/6f993127dffdb40dfb3bf4e8a0126109/transformed/work-runtime-2.8.1/AndroidManifest.xml:113:13-36
+215            android:exported="false" >
+215-->[androidx.work:work-runtime:2.8.1] /Users/sunanda/.gradle/caches/transforms-3/6f993127dffdb40dfb3bf4e8a0126109/transformed/work-runtime-2.8.1/AndroidManifest.xml:114:13-37
+216            <intent-filter>
+216-->[androidx.work:work-runtime:2.8.1] /Users/sunanda/.gradle/caches/transforms-3/6f993127dffdb40dfb3bf4e8a0126109/transformed/work-runtime-2.8.1/AndroidManifest.xml:116:13-120:29
+217                <action android:name="android.intent.action.BOOT_COMPLETED" />
+217-->[androidx.work:work-runtime:2.8.1] /Users/sunanda/.gradle/caches/transforms-3/6f993127dffdb40dfb3bf4e8a0126109/transformed/work-runtime-2.8.1/AndroidManifest.xml:117:17-79
+217-->[androidx.work:work-runtime:2.8.1] /Users/sunanda/.gradle/caches/transforms-3/6f993127dffdb40dfb3bf4e8a0126109/transformed/work-runtime-2.8.1/AndroidManifest.xml:117:25-76
+218                <action android:name="android.intent.action.TIME_SET" />
+218-->[androidx.work:work-runtime:2.8.1] /Users/sunanda/.gradle/caches/transforms-3/6f993127dffdb40dfb3bf4e8a0126109/transformed/work-runtime-2.8.1/AndroidManifest.xml:118:17-73
+218-->[androidx.work:work-runtime:2.8.1] /Users/sunanda/.gradle/caches/transforms-3/6f993127dffdb40dfb3bf4e8a0126109/transformed/work-runtime-2.8.1/AndroidManifest.xml:118:25-70
+219                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+219-->[androidx.work:work-runtime:2.8.1] /Users/sunanda/.gradle/caches/transforms-3/6f993127dffdb40dfb3bf4e8a0126109/transformed/work-runtime-2.8.1/AndroidManifest.xml:119:17-81
+219-->[androidx.work:work-runtime:2.8.1] /Users/sunanda/.gradle/caches/transforms-3/6f993127dffdb40dfb3bf4e8a0126109/transformed/work-runtime-2.8.1/AndroidManifest.xml:119:25-78
+220            </intent-filter>
+221        </receiver>
+222        <receiver
+222-->[androidx.work:work-runtime:2.8.1] /Users/sunanda/.gradle/caches/transforms-3/6f993127dffdb40dfb3bf4e8a0126109/transformed/work-runtime-2.8.1/AndroidManifest.xml:122:9-131:20
+223            android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver"
+223-->[androidx.work:work-runtime:2.8.1] /Users/sunanda/.gradle/caches/transforms-3/6f993127dffdb40dfb3bf4e8a0126109/transformed/work-runtime-2.8.1/AndroidManifest.xml:123:13-99
+224            android:directBootAware="false"
+224-->[androidx.work:work-runtime:2.8.1] /Users/sunanda/.gradle/caches/transforms-3/6f993127dffdb40dfb3bf4e8a0126109/transformed/work-runtime-2.8.1/AndroidManifest.xml:124:13-44
+225            android:enabled="@bool/enable_system_alarm_service_default"
+225-->[androidx.work:work-runtime:2.8.1] /Users/sunanda/.gradle/caches/transforms-3/6f993127dffdb40dfb3bf4e8a0126109/transformed/work-runtime-2.8.1/AndroidManifest.xml:125:13-72
+226            android:exported="false" >
+226-->[androidx.work:work-runtime:2.8.1] /Users/sunanda/.gradle/caches/transforms-3/6f993127dffdb40dfb3bf4e8a0126109/transformed/work-runtime-2.8.1/AndroidManifest.xml:126:13-37
+227            <intent-filter>
+227-->[androidx.work:work-runtime:2.8.1] /Users/sunanda/.gradle/caches/transforms-3/6f993127dffdb40dfb3bf4e8a0126109/transformed/work-runtime-2.8.1/AndroidManifest.xml:128:13-130:29
+228                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies" />
+228-->[androidx.work:work-runtime:2.8.1] /Users/sunanda/.gradle/caches/transforms-3/6f993127dffdb40dfb3bf4e8a0126109/transformed/work-runtime-2.8.1/AndroidManifest.xml:129:17-98
+228-->[androidx.work:work-runtime:2.8.1] /Users/sunanda/.gradle/caches/transforms-3/6f993127dffdb40dfb3bf4e8a0126109/transformed/work-runtime-2.8.1/AndroidManifest.xml:129:25-95
+229            </intent-filter>
+230        </receiver>
+231        <receiver
+231-->[androidx.work:work-runtime:2.8.1] /Users/sunanda/.gradle/caches/transforms-3/6f993127dffdb40dfb3bf4e8a0126109/transformed/work-runtime-2.8.1/AndroidManifest.xml:132:9-142:20
+232            android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver"
+232-->[androidx.work:work-runtime:2.8.1] /Users/sunanda/.gradle/caches/transforms-3/6f993127dffdb40dfb3bf4e8a0126109/transformed/work-runtime-2.8.1/AndroidManifest.xml:133:13-78
+233            android:directBootAware="false"
+233-->[androidx.work:work-runtime:2.8.1] /Users/sunanda/.gradle/caches/transforms-3/6f993127dffdb40dfb3bf4e8a0126109/transformed/work-runtime-2.8.1/AndroidManifest.xml:134:13-44
+234            android:enabled="true"
+234-->[androidx.work:work-runtime:2.8.1] /Users/sunanda/.gradle/caches/transforms-3/6f993127dffdb40dfb3bf4e8a0126109/transformed/work-runtime-2.8.1/AndroidManifest.xml:135:13-35
+235            android:exported="true"
+235-->[androidx.work:work-runtime:2.8.1] /Users/sunanda/.gradle/caches/transforms-3/6f993127dffdb40dfb3bf4e8a0126109/transformed/work-runtime-2.8.1/AndroidManifest.xml:136:13-36
+236            android:permission="android.permission.DUMP" >
+236-->[androidx.work:work-runtime:2.8.1] /Users/sunanda/.gradle/caches/transforms-3/6f993127dffdb40dfb3bf4e8a0126109/transformed/work-runtime-2.8.1/AndroidManifest.xml:137:13-57
+237            <intent-filter>
+237-->[androidx.work:work-runtime:2.8.1] /Users/sunanda/.gradle/caches/transforms-3/6f993127dffdb40dfb3bf4e8a0126109/transformed/work-runtime-2.8.1/AndroidManifest.xml:139:13-141:29
+238                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS" />
+238-->[androidx.work:work-runtime:2.8.1] /Users/sunanda/.gradle/caches/transforms-3/6f993127dffdb40dfb3bf4e8a0126109/transformed/work-runtime-2.8.1/AndroidManifest.xml:140:17-88
+238-->[androidx.work:work-runtime:2.8.1] /Users/sunanda/.gradle/caches/transforms-3/6f993127dffdb40dfb3bf4e8a0126109/transformed/work-runtime-2.8.1/AndroidManifest.xml:140:25-85
+239            </intent-filter>
+240        </receiver>
+241
+242        <uses-library
+242-->[androidx.window:window:1.2.0] /Users/sunanda/.gradle/caches/transforms-3/d4a6ca5503a19dcea0f3b651be9acab7/transformed/jetified-window-1.2.0/AndroidManifest.xml:23:9-25:40
+243            android:name="androidx.window.extensions"
+243-->[androidx.window:window:1.2.0] /Users/sunanda/.gradle/caches/transforms-3/d4a6ca5503a19dcea0f3b651be9acab7/transformed/jetified-window-1.2.0/AndroidManifest.xml:24:13-54
+244            android:required="false" />
+244-->[androidx.window:window:1.2.0] /Users/sunanda/.gradle/caches/transforms-3/d4a6ca5503a19dcea0f3b651be9acab7/transformed/jetified-window-1.2.0/AndroidManifest.xml:25:13-37
+245        <uses-library
+245-->[androidx.window:window:1.2.0] /Users/sunanda/.gradle/caches/transforms-3/d4a6ca5503a19dcea0f3b651be9acab7/transformed/jetified-window-1.2.0/AndroidManifest.xml:26:9-28:40
+246            android:name="androidx.window.sidecar"
+246-->[androidx.window:window:1.2.0] /Users/sunanda/.gradle/caches/transforms-3/d4a6ca5503a19dcea0f3b651be9acab7/transformed/jetified-window-1.2.0/AndroidManifest.xml:27:13-51
+247            android:required="false" />
+247-->[androidx.window:window:1.2.0] /Users/sunanda/.gradle/caches/transforms-3/d4a6ca5503a19dcea0f3b651be9acab7/transformed/jetified-window-1.2.0/AndroidManifest.xml:28:13-37
+248
+249        <service
+249-->[androidx.room:room-runtime:2.5.0] /Users/sunanda/.gradle/caches/transforms-3/0164bc93109ad7c8b8dbfff6d9740705/transformed/room-runtime-2.5.0/AndroidManifest.xml:24:9-28:63
+250            android:name="androidx.room.MultiInstanceInvalidationService"
+250-->[androidx.room:room-runtime:2.5.0] /Users/sunanda/.gradle/caches/transforms-3/0164bc93109ad7c8b8dbfff6d9740705/transformed/room-runtime-2.5.0/AndroidManifest.xml:25:13-74
+251            android:directBootAware="true"
+251-->[androidx.room:room-runtime:2.5.0] /Users/sunanda/.gradle/caches/transforms-3/0164bc93109ad7c8b8dbfff6d9740705/transformed/room-runtime-2.5.0/AndroidManifest.xml:26:13-43
+252            android:exported="false" />
+252-->[androidx.room:room-runtime:2.5.0] /Users/sunanda/.gradle/caches/transforms-3/0164bc93109ad7c8b8dbfff6d9740705/transformed/room-runtime-2.5.0/AndroidManifest.xml:27:13-37
+253
+254        <receiver
+254-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/sunanda/.gradle/caches/transforms-3/34758bf094995e6c40090ba06b061f11/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:34:9-52:20
+255            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+255-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/sunanda/.gradle/caches/transforms-3/34758bf094995e6c40090ba06b061f11/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:35:13-76
+256            android:directBootAware="false"
+256-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/sunanda/.gradle/caches/transforms-3/34758bf094995e6c40090ba06b061f11/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:36:13-44
+257            android:enabled="true"
+257-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/sunanda/.gradle/caches/transforms-3/34758bf094995e6c40090ba06b061f11/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:37:13-35
+258            android:exported="true"
+258-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/sunanda/.gradle/caches/transforms-3/34758bf094995e6c40090ba06b061f11/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:38:13-36
+259            android:permission="android.permission.DUMP" >
+259-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/sunanda/.gradle/caches/transforms-3/34758bf094995e6c40090ba06b061f11/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:39:13-57
+260            <intent-filter>
+260-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/sunanda/.gradle/caches/transforms-3/34758bf094995e6c40090ba06b061f11/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:40:13-42:29
+261                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+261-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/sunanda/.gradle/caches/transforms-3/34758bf094995e6c40090ba06b061f11/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:41:17-91
+261-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/sunanda/.gradle/caches/transforms-3/34758bf094995e6c40090ba06b061f11/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:41:25-88
+262            </intent-filter>
+263            <intent-filter>
+263-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/sunanda/.gradle/caches/transforms-3/34758bf094995e6c40090ba06b061f11/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:43:13-45:29
+264                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+264-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/sunanda/.gradle/caches/transforms-3/34758bf094995e6c40090ba06b061f11/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:44:17-85
+264-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/sunanda/.gradle/caches/transforms-3/34758bf094995e6c40090ba06b061f11/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:44:25-82
+265            </intent-filter>
+266            <intent-filter>
+266-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/sunanda/.gradle/caches/transforms-3/34758bf094995e6c40090ba06b061f11/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:46:13-48:29
+267                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+267-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/sunanda/.gradle/caches/transforms-3/34758bf094995e6c40090ba06b061f11/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:47:17-88
+267-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/sunanda/.gradle/caches/transforms-3/34758bf094995e6c40090ba06b061f11/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:47:25-85
+268            </intent-filter>
+269            <intent-filter>
+269-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/sunanda/.gradle/caches/transforms-3/34758bf094995e6c40090ba06b061f11/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:49:13-51:29
+270                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+270-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/sunanda/.gradle/caches/transforms-3/34758bf094995e6c40090ba06b061f11/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:50:17-95
+270-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/sunanda/.gradle/caches/transforms-3/34758bf094995e6c40090ba06b061f11/transformed/jetified-profileinstaller-1.3.1/AndroidManifest.xml:50:25-92
+271            </intent-filter>
+272        </receiver>
+273    </application>
+274
+275</manifest>

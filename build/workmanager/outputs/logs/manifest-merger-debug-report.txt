@@ -1,0 +1,25 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/sunanda/.pub-cache/hosted/pub.dev/workmanager-0.5.2/android/src/main/AndroidManifest.xml:1:1-2:12
+INJECTED from /Users/sunanda/.pub-cache/hosted/pub.dev/workmanager-0.5.2/android/src/main/AndroidManifest.xml:1:1-2:12
+INJECTED from /Users/sunanda/.pub-cache/hosted/pub.dev/workmanager-0.5.2/android/src/main/AndroidManifest.xml:1:1-2:12
+	package
+		ADDED from /Users/sunanda/.pub-cache/hosted/pub.dev/workmanager-0.5.2/android/src/main/AndroidManifest.xml:1:70-112
+		INJECTED from /Users/sunanda/.pub-cache/hosted/pub.dev/workmanager-0.5.2/android/src/main/AndroidManifest.xml
+		INJECTED from /Users/sunanda/.pub-cache/hosted/pub.dev/workmanager-0.5.2/android/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/sunanda/.pub-cache/hosted/pub.dev/workmanager-0.5.2/android/src/main/AndroidManifest.xml:1:11-69
+uses-sdk
+INJECTED from /Users/sunanda/.pub-cache/hosted/pub.dev/workmanager-0.5.2/android/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/sunanda/.pub-cache/hosted/pub.dev/workmanager-0.5.2/android/src/main/AndroidManifest.xml
+INJECTED from /Users/sunanda/.pub-cache/hosted/pub.dev/workmanager-0.5.2/android/src/main/AndroidManifest.xml
+INJECTED from /Users/sunanda/.pub-cache/hosted/pub.dev/workmanager-0.5.2/android/src/main/AndroidManifest.xml
+INJECTED from /Users/sunanda/.pub-cache/hosted/pub.dev/workmanager-0.5.2/android/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/sunanda/.pub-cache/hosted/pub.dev/workmanager-0.5.2/android/src/main/AndroidManifest.xml
+		ADDED from /Users/sunanda/.pub-cache/hosted/pub.dev/workmanager-0.5.2/android/src/main/AndroidManifest.xml
+		INJECTED from /Users/sunanda/.pub-cache/hosted/pub.dev/workmanager-0.5.2/android/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/sunanda/.pub-cache/hosted/pub.dev/workmanager-0.5.2/android/src/main/AndroidManifest.xml
+		ADDED from /Users/sunanda/.pub-cache/hosted/pub.dev/workmanager-0.5.2/android/src/main/AndroidManifest.xml
+		INJECTED from /Users/sunanda/.pub-cache/hosted/pub.dev/workmanager-0.5.2/android/src/main/AndroidManifest.xml
