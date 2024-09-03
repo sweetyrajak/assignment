@@ -1,16 +1,8 @@
-# assignment
+# Flutter Project
+Customer Details App
 
-Attendance Application
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+This is flutter project which shows customer details which you add. In customer details here I am adding customer name, mobile no., email, address, current location. This uses SQLite database and data save in local db.
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
